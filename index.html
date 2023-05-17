@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue email list</title>
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- VUE JS -->
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    <!-- LIBR AXIOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <h3>Lista Email</h3>
+        <ul v-for="email in emailGenerate">
+            <li v-if="emailGenerate.length == 10">
+                {{email}}
+            </li>
+        </ul>
+    </div>
+    
+    <!--MAIN.JS-->
+    <script src="./js/main.js"></script>
+</body>
+</html>
